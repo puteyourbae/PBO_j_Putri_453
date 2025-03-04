@@ -1,0 +1,25 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
+class Codelab1{
+    public static Scanner penginput = new Scanner(System.in);
+    public static void main (String[] args){
+        System.out.print("Masukkan Nama: ");
+        String nama = penginput.nextLine();
+        System.out.print("Masukkan Jenis kelamin(P/L): ");
+        String kelamin = penginput.nextLine();
+        System.out.print("Masukkan tahun lahir: ");
+        int tahunlahir = penginput.nextInt();
+
+
+        System.out.println("Data Diri:");
+        System.out.println("Nama\t: "+nama);
+        if(kelamin.equalsIgnoreCase("p")){
+            System.out.println("Jenis kelamin: Perempuan");
+        }
+        if(kelamin.equalsIgnoreCase("l")){
+            System.out.println("jenis kelamin: Laki - Laki");
+        }
+        System.out.println("Umur\t: "+ (2025 - tahunlahir));
+    }
